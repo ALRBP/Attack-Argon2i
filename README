@@ -1,0 +1,14 @@
+BUILD
+No configuration required
+Build with the command: make
+Should build with any C11 compliant compiler, no C11-threads support required
+Tested with GCC 7.1
+Possible to build in C++ by setting the PP switch to yes in Makefile
+POSIX threads support required
+This program is not intended to work on non-POSIX compliant systems, including M$ Windows and any potential future Linux derivative developed by Lennart Poettering
+This program should work on GNU/Linux systems, hopefully it will also on *BSD systems
+Remove temporary files with the command: make clean
+Remove all generated files with the command: make mrproper
+
+RUN
+attack <password length> <salt length> <hash length> <R> <#lanes> <#memory blocks (KiB)> <#passes>
